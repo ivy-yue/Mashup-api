@@ -34,17 +34,32 @@ Luzme API (XML)
 feedbooks  free e-book
 http://www.feedbooks.com/api
 
-
-
 GoodReads
+https://www.goodreads.com/api
+book.show_by_isbn   —   Get the reviews for a book given an ISBN
+Get the reviews for a book given an ISBN
+Get an xml or json response that contains embed code for the iframe reviews widget that shows excerpts (first 300 characters) of the most popular reviews of a book for a given ISBN. The reviews are from all known editions of the book. 
+URL: https://www.goodreads.com/book/isbn/ISBN?format=FORMAT    (sample url) 
+HTTP method: GET 
+Parameters: 
+format: xml or json
+callback: function to wrap JSON response if format=json
+key: Developer key (required only for XML).
+user_id: USER_ID (required only for JSON)
+isbn: The ISBN of the book to lookup.
+rating: Show only reviews with a particular rating (optional)
 
+Example code for using json with callback:
 
-
-
-#When I was looking for available Web APIs, I found part of book-related APIs were not free, so some specifications may undergo changes in the final version.
-
-
-
+            <script type="text/javascript">
+            function myCallback(result) {
+              alert('nb of reviews for book: ' + result.reviews.length);
+            }
+            var scriptTag = document.createElement('script');
+            scriptTag.src = "https://www.goodreads.com/book/isbn/0441172717?callback=myCallback&format=json&user_id=USER_ID";
+            document.getElementsByTagName('head')[0].appendChild(scriptTag);
+            </script>
+key: UOiW7hPGIzrS2aZttMlz2g
 
 
 #豆瓣数据结构 通过isbn获取数据
