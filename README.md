@@ -25,6 +25,118 @@ USA Today Best-Selling Books API ( XML )
 
 New York Times Best Sellers API (JSON)
 
+http://api.nytimes.com/svc/books/v2/lists/2010-10-01/trade-fiction-paperback.json&api-key=7a3023076f3c4e2a878d07aa9a350fb 0
+{
+   "status":"OK",
+   "copyright":"Copyright (c) 2011 The New York Times Company.  All Rights Reserved.",
+   "num_results":35,
+   "last_modified":"2011-02-10T16:43:13-05:00",
+   "results":[
+      {
+         "list_name":"Trade Fiction Paperback",
+         "display_name":"Paperback Trade Fiction",
+         "bestsellers_date":"2010-09-19",
+         "published_date":"2010-10-03",
+         "rank":1,
+         "rank_last_week":1,
+         "weeks_on_list":65,
+         "asterisk":0,
+         "dagger":0,
+         "isbns":[
+            {
+               "isbn10":"0307454541",
+               "isbn13":"9780307454546",
+            },
+            {
+               "isbn10":"0307473473",
+               "isbn13":"9780307473479",
+            },
+            {
+               "isbn10":"0307272117",
+               "isbn13":"9780307272119",
+            },
+            {
+               "isbn10":"0739384155",
+               "isbn13":"9780739384152",
+            }
+         ],
+         "book_details":[
+            {
+               "title":"THE GIRL WITH THE DRAGON TATTOO",
+               "description":"A hacker and a journalist investigate the disappearance 
+                   of a Swedish heiress.",
+               "contributor":"by Stieg Larsson",
+               "author":"Stieg Larsson",
+               "contributor_note":"",
+               "price":14.95,
+               "age_group":"",
+               "publisher":"Vintage Crime\/Black Lizard",
+               "primary_isbn13":"9780307454546",
+               "primary_isbn10":"0307454541",
+            }
+         ],
+         "reviews":[
+            {
+               "book_review_link":"http:\/\/www.nytimes.com\/2008\/09\/30\
+                   /books\/30kaku.html",
+               "first_chapter_link":"",
+               "sunday_review_link":"http:\/\/www.nytimes.com\/2008\/09\/14\
+                   /books\/review\/Berenson-t.html",
+               "article_chapter_link":""
+            }
+         ]
+      },
+      {
+         "list_name":"Trade Fiction Paperback",
+         "display_name":"Paperback Trade Fiction",
+         "bestsellers_date":"2010-09-19",
+         "published_date":"2010-10-03",
+         "rank":20,
+         "rank_last_week":18,
+         "weeks_on_list":3,
+         "asterisk":0,
+         "dagger":0,
+         "isbns":[
+            {
+               "isbn10":"0312429983",
+               "isbn13":"9780312429980",
+            },
+            {
+               "isbn10":"0805080686",
+               "isbn13":"9780805080681",
+            }
+         ],
+         ..
+         "book_details":[
+            {
+               "title":"WOLF HALL",
+               "description":"Thomas More and Thomas Cromwell clash in the court 
+                  of Henry VIII; winner of the 2009 Man Booker Prize.",
+               "contributor":"by Hilary Mantel",
+               "author":"Hilary Mantel",
+               "contributor_note":"",
+               "price":16,
+               "age_group":"",
+               "publisher":"Picador",
+               "primary_isbn13":"9780312429980",
+               "primary_isbn10":"0312429983",
+            }
+         ],
+         "reviews":[
+            {
+               "book_review_link":"http:\/\/www.nytimes.com\/2009\/10\/05\
+                    /books\/05maslin.html",
+               "first_chapter_link":"",
+               "sunday_review_link":"http:\/\/www.nytimes.com\/2009\/11\/01\
+                    /books\/review\/Benfey-t.html",
+               "article_chapter_link":"http:\/\/www.nytimes.com\/2009\/10\/07\
+                   /books\/07booker.html"
+            }
+         ]
+      }
+   ]
+}
+
 Google Books API
 
 豆瓣Api V2 ( JSON )
